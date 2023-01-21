@@ -1,0 +1,11 @@
+# Ignore all .idea files
+.idea
+
+# Ignore all uninterested files
+notes.txt
+
+# Ignore target
+target
+
+# Ignore mac file
+.DS_Store
