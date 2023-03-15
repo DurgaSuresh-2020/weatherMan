@@ -22,5 +22,11 @@ public class TestCurrentWeather{
             Response response = CurrentWeatherAPI.getCurrentWeather("Amsterdam");
             assertResponseStatusIs(SC_OK,response);
         }
+
+        @Test
+        void assertDummyTest1() {
+            Response response = CurrentWeatherAPI.getCurrentWeather("Amsterdam");
+            assertResponseStatusIs(SC_OK,response);
+        }
     }
 }
