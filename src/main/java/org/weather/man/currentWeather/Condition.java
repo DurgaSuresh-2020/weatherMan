@@ -11,8 +11,8 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @Data
 public class Condition {
-        private String text;
-        private String icon;
-        private String code;
+        public String text;
+        public String icon;
+        public String code;
 
 }
