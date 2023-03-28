@@ -11,11 +11,10 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @Data
 public class Current {
-
-            private String last_updated_epoch;
-            private String last_updated;
-            private String temp_c;
-            private String temp_f;
-            private String is_day;
-            private Condition condition;
+            public String last_updated_epoch;
+            public String last_updated;
+            public String temp_c;
+            public String temp_f;
+            public String is_day;
+            public Condition condition;
 }

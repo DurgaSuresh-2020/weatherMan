@@ -14,4 +14,11 @@ public class CurrentWeatherRequest {
                 .queryParam("key",getConfig().getString("API_KEY"))
                 .log().ifValidationFails();
     }
+
+    public static RequestSpecification createWeatherRequestWithoutAuth() {
+        return RestAssured
+                .given()
+                .spec(CurrentWeatherSpec.getBasicSpec())
+                .log().ifValidationFails();
+    }
 }
