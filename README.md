@@ -17,6 +17,6 @@ Key tools to be used in this core framework are:
 - [x] Github actions (for continuous integration)
 - [ ] Faker library (for generating random test data for different locales - germany, france, netherlands, english)
 - [ ] Elastic and Kibana (for test monitoring)
-- [ ] Docker (for automating test framework's environment)
+- [x] Docker (for automating test framework's environment)
 - [ ] SonarQube/SonarLint (for keeping your code clean and safe)
-- [ ] RestAssured (library for Rest API automation)
+- [x] RestAssured (library for Rest API automation)
