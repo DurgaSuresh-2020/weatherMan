@@ -1,8 +1,8 @@
 pipeline {
     agent {
         docker {
-            image 'durgasuresh2020/weatherman'
-            args '-v $HOME/.m2:/root/.m2'
+            image 'maven:3.8.3-openjdk-11'
+            args '-v /root/.m2:/root/.m2'
         }
     }
     stages {
@@ -11,11 +11,13 @@ pipeline {
                 checkout scm
             }
         }
+
         stage('Build') {
             steps {
                 sh 'mvn clean package'
             }
         }
+
         stage('Test') {
             steps {
                 sh 'mvn test'
