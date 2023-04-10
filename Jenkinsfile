@@ -1,10 +1,10 @@
 pipeline {
     agent {
         docker {
-            image 'maven:3.8.3-openjdk-11'
-            args '-v /root/.m2:/root/.m2'
+            image 'durgasuresh2020/weatherman'
         }
     }
+
     stages {
         stage('Checkout') {
             steps {
