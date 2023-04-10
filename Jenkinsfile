@@ -1,8 +1,6 @@
 pipeline {
     agent {
-        docker {
-            image 'durgasuresh2020/weatherman'
-        }
+        label 'docker'
     }
 
     stages {
@@ -21,6 +19,12 @@ pipeline {
         stage('Test') {
             steps {
                 sh 'mvn test'
+            }
+        }
+
+        stage('Build Docker Image') {
+            steps {
+                sh 'docker build -t durgasuresh2020/weatherman .'
             }
         }
     }
